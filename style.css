@@ -142,11 +142,12 @@ footer{
     box-shadow:0 5px 12px rgba(0,0,0,.08);
 }
 
-.progress-card h3{
+.progress-card h2{
     text-align:center;
     color:#0B8F6A;
     margin-bottom:18px;
 }
+
 
 .progress{
     width:100%;
@@ -155,6 +156,7 @@ footer{
     border-radius:50px;
     overflow:hidden;
 }
+
 
 .progress-fill{
     width:0%;
@@ -193,6 +195,30 @@ footer{
     font-weight:bold;
     color:#16A34A;
 }
+
+.ikm2025-card{
+    margin-top:20px;
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.ikm2025-card h3{
+    font-size:18px;
+    font-weight:600;
+    color:#0B8F6A;
+    margin-bottom:8px;
+}
+
+.ikm2025-card h2{
+    font-size:25px;
+    font-weight:700;
+    color:#0B8F6A;
+    margin:0;
+}
+
 
 .theme-toggle{
     display:flex;
@@ -257,6 +283,7 @@ body.dark-mode{
 
 body.dark-mode .clock-card,
 body.dark-mode .progress-card,
+body.dark-mode .ikm2025-card,
 body.dark-mode .info{
     background:#1E1E1E;
     color:#fff;
@@ -299,3 +326,25 @@ body.dark-mode #themeBtn{
     }
 
 }
+
+#topBtn{
+    position:fixed;
+    bottom:25px;
+    right:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#0B8F6A;
+    color:#fff;
+    font-size:25px;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 5px 12px rgba(0,0,0,.25);
+    transition:.3s;
+    z-index:999;
+}
+
+#topBtn:hover{
+    transform:translateY(-3px);
+    background:#087355;
