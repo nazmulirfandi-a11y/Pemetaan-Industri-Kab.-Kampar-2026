@@ -13,7 +13,7 @@ function updateClock() {
 setInterval(updateClock,1000);
 updateClock();
 
-const apiUrl="https://script.googleusercontent.com/a/macros/universitaspahlawan.ac.id/echo?user_content_key=AUkAhnSgkoIM4djAjIxilHoLX8wfbM2CjG6XOMq7Wd0az-stqAaZk3zGeRPqr8CmJ8SYIJ7yKtEAMcCxR95TuSmgbOdaC0btq9CY7cwg2Vc522cO-KcwgYkxP9EpEja8Pfin1Ix1RdOrfuYkOR1jmvVQcknPBQrF3_dNXBtsXhphsAOjL8JdQBIpq_v8GKu30_qPHIyqCs2l3mtJ07E-A63E3n28QDG6Lnt10o1KgOZ6SMJsHcSfP9zlBUswzX-PmDmDhjFlHN_lWxla1-vG_wydTILTl-eTrA_8jDYd-fPyz4MKR0JUhcR4nKxx0OOoBQ&lib=Mm8EKvAEJph62JK0OaRKBKE4Q1zlFJq4E";
+const apiUrl="https://script.google.com/macros/s/AKfycbzc1iRwpPSA7Bt9XMwofapB5fWBU6BzPlAH11Dmq1HpmrL3ofZq7z3jhcOt77UW-Jmn/exec";
 async function loadProgress(){
     try{
         const response=await fetch(apiUrl);
