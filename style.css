@@ -134,15 +134,6 @@ footer{
     font-size:13px;
 }
 
-@media(min-width:768px){
-.container{
-    max-width:700px;
-}
-
-.logo img{
-    width:90px;
-}
-
 .progress-card{
     background:#fff;
     margin-top:20px;
@@ -173,17 +164,17 @@ footer{
 }
 
 .progress-info{
-    display:flex;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
     margin-top:15px;
 }
 
 .progress-info div{
-    width:48%;
-    text-align:center;
     background:#F5F7FA;
+    padding:15px;
     border-radius:12px;
-    padding:12px;
+    text-align:center;
 }
 
 .progress-info h4{
@@ -225,7 +216,7 @@ footer{
     transform:rotate(20deg);
 }
 
-.dark-mode{
+body.dark-mode{
     background:#121212;
     color:white;
 }
@@ -256,4 +247,55 @@ footer{
 .dark-mode #themeBtn{
     background:#2A2A2A;
     color:white;
+}
+
+
+body.dark-mode{
+    background:#121212;
+    color:#fff;
+}
+
+body.dark-mode .clock-card,
+body.dark-mode .progress-card,
+body.dark-mode .info{
+    background:#1E1E1E;
+    color:#fff;
+}
+
+body.dark-mode h1{
+    color:#57D18C;
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode footer,
+body.dark-mode #date,
+body.dark-mode .tahun{
+    color:#E5E5E5;
+}
+
+body.dark-mode .progress-info div{
+    background:#2A2A2A;
+}
+
+body.dark-mode #themeBtn{
+    background:#2A2A2A;
+    color:#fff;
+}
+
+@media (min-width:768px){
+
+    .container{
+        max-width:700px;
+    }
+
+    .logo img{
+        width:90px;
+    }
+
+    h1{
+        font-size:42px;
+    }
+
 }
