@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#F5F7FA;
+    font-family:'Poppins',sans-serif;
+}
+
+.container{
+    max-width:480px;
+    margin:auto;
+    padding:20px;
+}
+
+.logo{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:15px;
+    margin-bottom:25px;
+}
+.logo img{
+    width:70px;
+}
+
+h1{
+    text-align:center;
+    color:#0B8F6A;
+    font-size:40px;
+    font-weight:700;
+    margin:0;
+    line-height:1.2;
+}
+
+h2{
+    text-align:center;
+    color:#111;
+    font-size:22px;
+    font-weight:600;
+    margin:6px 0 0 0;
+    line-height:1.2;
+}
+
+.tahun{
+    text-align:center;
+    color:#777;
+    font-size:16px;
+    margin:8px 0 18px 0;
+}
+
+.clock-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+#clock{
+    font-size:38px;
+    font-weight:bold;
+    color:#0B8F6A;
+}
+
+#date{
+    margin-top:5px;
+    color:#555;
+}
+
+.menu{
+    margin-top:25px;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    text-decoration:none;
+    color:white;
+    padding:18px;
+    text-align:center;
+    border-radius:12px;
+    margin-bottom:15px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:scale(1.02);
+}
+
+.hijau{
+    background:#16A34A;
+}
+
+.biru{
+    background:#2563EB;
+}
+
+.orange{
+    background:#F59E0B;
+}
+
+.merah{
+    background:#DC2626;
+}
+
+.info{
+    margin-top:25px;
+    background:white;
+    padding:18px;
+    border-radius:15px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.info h3{
+    margin-bottom:10px;
+    color:#0B8F6A;
+}
+
+.info p{
+    font-size:14px;
+    line-height:1.7;
+    color:#555;
+}
+
+footer{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:20px;
+    color:#777;
+    font-size:13px;
+}
+
+@media(min-width:768px){
+.container{
+    max-width:700px;
+}
+
+.logo img{
+    width:90px;
+}
+
+.progress-card{
+    background:#fff;
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.progress-card h3{
+    text-align:center;
+    color:#0B8F6A;
+    margin-bottom:18px;
+}
+
+.progress{
+    width:100%;
+    height:14px;
+    background:#E5E7EB;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    width:0%;
+    height:100%;
+    background:#16A34A;
+    transition:1s;
+}
+
+.progress-info{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+.progress-info div{
+    width:48%;
+    text-align:center;
+    background:#F5F7FA;
+    border-radius:12px;
+    padding:12px;
+}
+
+.progress-info h4{
+    font-size:28px;
+    color:#0B8F6A;
+}
+
+.progress-info small{
+    color:#777;
+}
+
+.persentase{
+    text-align:center;
+    margin-top:15px;
+    font-size:32px;
+    font-weight:bold;
+    color:#16A34A;
+}
+
+.theme-toggle{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:15px;
+}
+
+#themeBtn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#ffffff;
+    cursor:pointer;
+    font-size:22px;
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+#themeBtn:hover{
+    transform:rotate(20deg);
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .clock-card,
+.dark-mode .progress-card,
+.dark-mode .info{
+    background:#1E1E1E;
+    color:white;
+}
+
+.dark-mode h1{
+    color:#57D18C;
+}
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode footer,
+.dark-mode #date{
+    color:#EEEEEE;
+}
+
+.dark-mode .progress-info div{
+    background:#2A2A2A;
+}
+
+.dark-mode #themeBtn{
+    background:#2A2A2A;
+    color:white;
+}
