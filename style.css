@@ -12,7 +12,7 @@ body{
 .container{
     max-width:480px;
     margin:auto;
-    padding:20px;
+    padding:30px 20px 20px;
 }
 
 .logo{
@@ -109,15 +109,30 @@ h2{
 
 .info{
     margin-top:25px;
-    background:white;
+    background:#fff;
     padding:18px;
     border-radius:15px;
     box-shadow:0 5px 12px rgba(0,0,0,.08);
+    transition:all .3s cubic-bezier(.22,1,.36,1);
+    cursor:default;
+}
+
+.info:hover{
+    transform:translateY(-4px);
+    background:#FCFEFD;
+    box-shadow:
+        0 12px 24px rgba(0,0,0,.08),
+        0 0 0 1px rgba(22,163,74,.12);
 }
 
 .info h3{
     margin-bottom:10px;
     color:#0B8F6A;
+    transition:color .3s ease;
+}
+
+.info:hover h3{
+    color:#16A34A;
 }
 
 .info p{
@@ -311,6 +326,10 @@ body.dark-mode #themeBtn{
     color:#fff;
 }
 
+body.dark-mode .running-text{
+    background:#1B5E20;
+}
+
 @media (min-width:768px){
 
     .container{
@@ -348,3 +367,89 @@ body.dark-mode #themeBtn{
 #topBtn:hover{
     transform:translateY(-3px);
     background:#087355;
+}
+
+/* ================= RUNNING TEXT ================= */
+
+.running-text{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#0B8F6A;
+    color:#fff;
+    overflow:hidden;
+    white-space:nowrap;
+    padding:7px 0;
+    z-index:9999;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.running-content{
+    display:inline-block;
+    padding-left:100%;
+    animation:marquee 66s linear infinite;
+}
+
+.running-text{
+    cursor:pointer;
+}
+
+.running-text:hover .running-content{
+    animation-play-state: paused;
+}
+
+@keyframes marquee{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+
+}
+
+.ikm2025-card{
+    margin-top:20px;
+    background:#fff;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+    transition:all .3s cubic-bezier(.22,1,.36,1);
+}
+
+.ikm2025-card:hover{
+    transform:translateY(-4px);
+    background:#FCFEFD;
+    box-shadow:
+        0 12px 24px rgba(0,0,0,.08),
+        0 0 0 1px rgba(22,163,74,.12);
+
+}
+
+.ikm2025-card h2,
+.ikm2025-card h3{
+    transition:color .3s ease;
+}
+
+.ikm2025-card:hover h2,
+.ikm2025-card:hover h3{
+    color:#16A34A;
+}
+
+.logo img{
+    width:70px;
+    transition:all .35s cubic-bezier(.22,1,.36,1);
+    cursor:pointer;
+}
+
+.logo img:hover{
+
+    transform:scale(1.08);
+
+    filter:
+        drop-shadow(0 0 8px rgba(22,163,74,.25))
+        drop-shadow(0 8px 16px rgba(0,0,0,.15));
+
+}
